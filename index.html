@@ -51,5 +51,29 @@
 
         <a href="https://wa.me/593978941301?text=¡SÍ+ACEPTO+LA+CITA!+❤️" class="boton">¡SÍ, QUIERO IR!</a>
     </div>
+    <audio id="musica" loop>
+    <source src="amor del bueno.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+    // Esto hace que la música empiece al primer toque en la pantalla
+    document.addEventListener('click', function() {
+        var audio = document.getElementById('musica');
+        audio.play();
+    }, { once: true }); // Solo se ejecuta la primera vez que hace clic
+</script>
+
+<style>
+    /* Un pequeño recordatorio visual */
+    .nota-musical {
+        font-size: 0.8em;
+        color: #FFD700;
+        margin-top: 10px;
+        font-style: italic;
+    }
+</style>
+
+<p class="nota-musical">🎵 Toca en cualquier lugar para escuchar la canción...</p>
 </body>
 </html>
